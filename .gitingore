@@ -1,0 +1,45 @@
+; street-help-app/
+; │
+; ├── backend/                  # Flask API server
+; │   ├── venv/                  # Python virtual environment
+; │   ├── requirements.txt       # Backend dependencies
+; │   ├── .env                   # API keys & DB credentials
+; │   ├── app.py                 # Flask entry point
+; │   ├── config.py              # Config settings (Supabase, DB URLs)
+; │   ├── routes/                # API endpoints
+; │   │   ├── report_routes.py   # For submitting/viewing reports
+; │   │   └── ngo_routes.py      # For NGO directory
+; │   ├── controllers/           # Handles request logic
+; │   │   ├── report_controller.py
+; │   │   └── ngo_controller.py
+; │   ├── models/                # Database models & queries
+; │   │   ├── report_model.py
+; │   │   └── ngo_model.py
+; │   └── utils/                 # Helper functions
+; │       └── supabase_client.py # Supabase connection setup
+; │
+; ├── frontend/                  # React app
+; │   ├── package.json           # Frontend dependencies
+; │   ├── public/                # Static assets (favicon, etc.)
+; │   ├── src/
+; │   │   ├── index.js           # React entry point
+; │   │   ├── App.js             # Main app component
+; │   │   ├── pages/             # Full pages
+; │   │   │   ├── Home.js
+; │   │   │   ├── ReportForm.js
+; │   │   │   └── NGOList.js
+; │   │   ├── components/        # Reusable UI parts
+; │   │   │   ├── Navbar.js
+; │   │   │   ├── ReportCard.js
+; │   │   │   └── NGOCard.js
+; │   │   ├── services/          # API calls to Flask backend
+; │   │   │   ├── reportService.js
+; │   │   │   └── ngoService.js
+; │   │   ├── styles/            # CSS files
+; │   │   │   ├── main.css
+; │   │   │   └── form.css
+; │   │   └── utils/             # Helpers
+; │   │       └── formatDate.js
+; │
+; ├── README.md                  # Project documentation
+; └── .gitignore                 # Ignore venv, env files, node_modules, etc.
