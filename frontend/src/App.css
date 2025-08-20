@@ -21,18 +21,41 @@
 }
  
 .anonymousmode-link {
+    margin-left: 22px;
+
   border: 0%, aliceblue
   ;
 }
 
 .faqs-link {
-  
+  margin-left: 22px;
 }
 
 .reportchild-link {
+  margin-left: 22px;
 
 }
 
 .ngos-link {
-  
+    margin-left: 22px;
+
+}
+
+.login-button {
+    margin-left: 546px;
+    padding: 6px;
+    width: 75px;
+    border: 0px;
+    border-radius: 6px;
+    background-color: rgb(153, 88, 213);
+}
+
+.signup-button {
+    margin-left: 22px;
+    padding: 6px;
+    width: 75px;
+    border: 0px;
+    border-radius: 6px;
+    background-color: rgb(153, 88, 213);
+
 }
