@@ -1,5 +1,5 @@
 from models.ngo_model import NGO
-from config import db
+from extensions import db
 
 def get_ngos():
     """Fetch all NGOs with structured data."""

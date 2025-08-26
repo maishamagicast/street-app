@@ -9,7 +9,7 @@ flask = "==3.0.3"
 flask-sqlalchemy = "*"
 flask-migrate = "==4.0.7"
 flask-mail = "==0.9.1"
-python-dotenv = "==1.0.1"
+python-dotenv = "*"
 flask-cors = "*"
 psycopg2-binary = "*"
 

@@ -1,6 +1,6 @@
 from models.report_model import Report
 from models.ngo_model import NGO
-from config import db
+from extensions import db
 from utils.mailer import send_email  
 
 def get_reports():

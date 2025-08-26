@@ -1,4 +1,4 @@
-from config import db
+from extensions import db
 
 class Report(db.Model):
     __tablename__='reports'

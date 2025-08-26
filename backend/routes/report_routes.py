@@ -11,6 +11,8 @@ def list_reports():
 @report_bp.post("/")
 def add_report():
     data = request.get_json()
-    report = create_report(data)
+    report, error = create_report(data)
+    if error:
+        return jsonify({"error": error}), 400
     return jsonify(report), 201
 

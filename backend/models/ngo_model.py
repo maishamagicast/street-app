@@ -1,4 +1,4 @@
-from config import db
+from extensions import db
 
 class NGO(db.Model):
     __tablename__='ngos'

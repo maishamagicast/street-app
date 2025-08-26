@@ -11,5 +11,7 @@ def list_ngos():
 @ngo_bp.post("/")
 def add_ngo():
     data = request.get_json()
-    ngo = create_ngo(data)
+    ngo, error = create_ngo(data)
+    if error:
+        return jsonify({"error": error}), 400
     return jsonify(ngo), 201
