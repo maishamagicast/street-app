@@ -68,3 +68,7 @@
   margin-left: 12px;
   border: 1px solid beige;
 }
+
+.reporting-child-form {
+  max-width: 320px;
+}
