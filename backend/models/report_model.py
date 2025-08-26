@@ -11,7 +11,7 @@ class Report(db.Model):
     child_gender=db.Column(db.String(20),nullable=True)
     
     case_type=db.Column(db.String(100),nullable=False)
-    description=db.Coolumn(db.Text,nullable=True)
+    description=db.Column(db.Text,nullable=True)
     location=db.Column(db.String(300),nullable=True)
     
     reported_at=db.Column(db.DateTime,server_default=db.func.now())
