@@ -156,16 +156,22 @@ font-family:'Times New Roman', Times, serif;
  }
 
  #signup-checkbox-input{
-  /* margin-left: 200px; */
-  margin-top: 10px;
+  margin-left: 150px;
+  margin-top: 21px;
+  margin-bottom: 0px;
  }
 
  .signup-page-remember-me-ptag{
+  margin-left: 200px;
+  margin-top: 0px;
  }
 
  .create-account-button{
-  width: 220px;
-  padding: 4px;
+  width: 320px;
+  padding: 8px;
+  margin-top: 10px;
+  margin-left: 55px;
+  border-radius: 6px;
   border: 1px solid rgb(30, 111, 183);
 
  }

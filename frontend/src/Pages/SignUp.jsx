@@ -16,7 +16,7 @@ function SignUp() {
         <input type="text" name="" id="signup-username-input" placeholder='Enter username' />
         <input type="email" name="" id="signup-email-input" placeholder='Enter email' />
         <input type="password" name="" id="signup-password-input"  placeholder='Enter your password'/>
-        <input type="checkbox" name="" id="signup-checkbox-input" />
+        <input type="checkbox" name="" id="signup-checkbox-input" p />
         <p className='signup-page-remember-me-ptag' >Remember me</p>
         <button className='create-account-button' >Create account</button>
        </form>
