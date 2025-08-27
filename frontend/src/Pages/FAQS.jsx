@@ -6,14 +6,14 @@ function FAQS() {
   useEffect(() => {
     fetch("db.json")
     .then((response) => response.json())
-    .then(setFaqsList(data))
+    .then((data) =>setFaqsList(data))
   }, [])
   return (
     <>
-    {faqsList.faqs.map((question)=> {
-      return(
-        <li>{question}</li>
-      ) 
+    {faqsList.faqs.map((faq, index)=> {
+  
+        <li key={index}>{faq.question}</li>
+      
     })}
     </>
   )
