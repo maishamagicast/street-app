@@ -1,0 +1,52 @@
+{
+  "faqs": [
+    {
+      "question": "Why are children living on the streets?",
+      "answer": "Children end up on the streets due to reasons like poverty, family conflict, abuse, loss of parents, or displacement from crises."
+    },
+    {
+      "question": "How do street children survive?",
+      "answer": "They survive through begging, doing small jobs, collecting recyclables, or relying on donations. Some form groups for safety and support."
+    },
+    {
+      "question": "Why aren't they in school?",
+      "answer": "Most can't afford school fees or supplies, lack documents, or face discrimination. Some drop out to support themselves or their families."
+    },
+    {
+      "question": "Do all street children take drugs?",
+      "answer": "Not all, but some use substances to cope with hunger, cold, or trauma. It's a survival response, not a lifestyle choice."
+    },
+    {
+      "question": "What do they eat?",
+      "answer": "They eat food from donations, leftovers, or buy what they can with the little money they earn. Hunger is a constant challenge."
+    },
+    {
+      "question": "Where do they sleep?",
+      "answer": "On sidewalks, under bridges, in abandoned buildings, parks, or markets—anywhere that offers some protection from danger and weather."
+    },
+    {
+      "question": "Are they dangerous or criminals?",
+      "answer": "No. While some may engage in petty crimes out of necessity, most are just trying to survive and protect themselves in a harsh environment."
+    },
+    {
+      "question": "What can be done to help them?",
+      "answer": "Support local NGOs, advocate for child protection policies, provide education and job opportunities, or treat them with kindness and dignity."
+    },
+    {
+      "question": "Do they want to leave the streets?",
+      "answer": "Yes. Many dream of a better life with education, stability, and love. But they often lack the support system to make that happen."
+    },
+    {
+      "question": "Are there government programs for them?",
+      "answer": "Some governments have shelters, education programs, or outreach teams, but these services are often underfunded, unsafe, or hard to access."
+    },
+    {
+      "question": "Are all street children orphans?",
+      "answer": "No. Some have families but were forced to leave due to abuse, neglect, poverty, or being unwanted."
+    },
+    {
+      "question": "Can they be adopted or placed in foster care?",
+      "answer": "In some cases, yes, but legal and social systems vary. Safe reintegration or family tracing is often the first goal before adoption."
+    }
+  ]
+}
