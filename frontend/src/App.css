@@ -72,3 +72,100 @@
 .reporting-child-form {
   max-width: 320px;
 }
+
+.signup-image {
+  width: 520px;
+  height: 520px;
+  border-radius: 16px;
+}
+
+.signup-image-container{
+  max-width: 520px;
+  height: 520px;
+}
+
+.signup-form-container{
+  background-color: aquamarine;
+  width: 550px;
+  margin-left: 5px;
+  border-radius: 16px;
+}
+#create-account-h1{
+  color: rgb(71, 56, 146);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:30px ;
+  font-weight: 600;
+  margin-left:122px;
+  margin-top: 50px;
+}
+
+#signup-page-ptag {
+font-size: 15px;
+margin-top: 1px;
+margin-left: 42px;
+font-family:'Times New Roman', Times, serif;
+}
+
+.signup-container {
+  display: flex;
+}
+
+ #signup-firstname-input {
+  width: 145px;
+  padding: 8px;
+  border: 1px solid rgb(30, 111, 183);
+  margin-left: 50px;
+  border-radius: 6px;
+ }
+
+ #signup-lastname-input{
+  margin-left: 10px;
+  width: 145px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid rgb(30, 111, 183);
+ }
+
+ #signup-username-input{
+  width: 320px;
+  padding: 8px;
+  margin-top: 10px;
+  margin-left: 50px;
+  border-radius: 6px;
+  border: 1px solid rgb(30, 111, 183);
+
+ }
+
+ #signup-email-input{
+    width: 320px;
+  padding: 8px;
+  margin-top: 10px;
+  margin-left: 50px;
+  border-radius: 6px;
+  border: 1px solid rgb(30, 111, 183);
+ }
+
+ #signup-password-input{
+  width: 320px;
+  padding: 8px;
+  margin-top: 10px;
+  margin-left: 50px;
+  border-radius: 6px;
+  border: 1px solid rgb(30, 111, 183);
+
+ }
+
+ #signup-checkbox-input{
+  /* margin-left: 200px; */
+  margin-top: 10px;
+ }
+
+ .signup-page-remember-me-ptag{
+ }
+
+ .create-account-button{
+  width: 220px;
+  padding: 4px;
+  border: 1px solid rgb(30, 111, 183);
+
+ }
