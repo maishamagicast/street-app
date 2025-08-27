@@ -1,0 +1,24 @@
+from flask import Blueprint, request, jsonify
+from controllers.ngo_controller import get_ngos, create_ngo, delete_ngo
+
+ngo_bp = Blueprint("ngo_bp", __name__, url_prefix="/ngos")
+
+@ngo_bp.get("/")
+def list_ngos():
+    ngos = get_ngos()
+    return jsonify(ngos), 200
+
+@ngo_bp.post("/")
+def add_ngo():
+    data = request.get_json()
+    ngo, error = create_ngo(data)
+    if error:
+        return jsonify({"error": error}), 400
+    return jsonify(ngo), 201
+
+@ngo_bp.delete("/<int:ngo_id>")
+def remove_ngo(ngo_id):
+    result, error = delete_ngo(ngo_id)
+    if error:
+        return jsonify({"error": error}), 404
+    return jsonify(result), 200
