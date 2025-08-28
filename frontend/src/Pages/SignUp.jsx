@@ -1,7 +1,24 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useEffect, useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 
 function SignUp() {
+  const [isLoaded, setIsLoaded] = useState(false)
+  const navigate = useNavigate()
+  useEffect(() => {
+    // setTimeout(() => {
+    //   setIsLoaded(true)
+    // }, 2000);
+  }, [])
+//   if (!isLoaded) {
+//     return (
+//      <div style={{backgroundColor:"blanchedalmond", width:1000, height:1000}}>
+//  <h2>Loading...</h2>
+//      </div>
+//     )
+//   }
+  function handleCreateAccount() {
+    navigate("/")
+  }
   return (
     <div className='signup-container'>
     <div className='signup-image-container' >
@@ -18,7 +35,7 @@ function SignUp() {
         <input type="password" name="" id="signup-password-input"  placeholder='Enter your password'/>
         <input type="checkbox" name="" id="signup-checkbox-input" p />
         <p className='signup-page-remember-me-ptag' >Remember me</p>
-        <button className='create-account-button' >Create account</button>
+        <button className='create-account-button' onClick={handleCreateAccount} >Create account</button>
        </form>
     </div>
     </div>

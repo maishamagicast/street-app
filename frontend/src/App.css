@@ -41,14 +41,6 @@
 
 }
 
-.login-button {
-    margin-left: 510px;
-    padding: 6px;
-    width: 75px;
-    border: 0px;
-    border-radius: 6px;
-    background-color: rgb(153, 88, 213);
-}
 
 .signup-button {
     margin-left: 22px;
@@ -175,3 +167,61 @@ font-family:'Times New Roman', Times, serif;
   border: 1px solid rgb(30, 111, 183);
 
  }
+
+ .faqs-question-card{
+background-color: aliceblue;
+}
+
+.login-container {
+background-color: aqua;
+  width: 550px;
+  height: 490px;
+  margin-left:26%;
+  border-radius: 16px;
+
+}
+
+.login-button {
+    padding: 6px;
+    width: 75px;
+    border: 0px;
+    border-radius: 6px;
+    background-color: rgb(153, 88, 213);
+}
+
+.login-email-or-username-input{
+  width: 320px;
+  padding: 8px;
+  margin-top: 320px;
+  margin-left: 50px;
+  border-radius: 6px;
+  border: 1px solid rgb(30, 111, 183);
+
+}
+
+.login-passqord-input{
+  width: 320px;
+  padding: 8px;
+  margin-top: 10px;
+  margin-left: 50px;
+  border-radius: 6px;
+  border: 1px solid rgb(30, 111, 183);
+}
+
+.login-page-ptag{
+font-size: 15px;
+margin-top: 9px;
+margin-left: 42px;
+font-family:'Times New Roman', Times, serif;
+
+}
+
+.login-button{
+  width: 320px;
+  padding: 8px;
+  margin-top: 10px;
+  margin-left: 55px;
+  border-radius: 6px;
+  border: 1px solid rgb(30, 111, 183);
+
+}
