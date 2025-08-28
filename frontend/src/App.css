@@ -225,3 +225,73 @@ font-family:'Times New Roman', Times, serif;
   border: 1px solid rgb(30, 111, 183);
 
 }
+
+.report-child-container{
+  background-color: rgb(101, 158, 211);
+  width: 550px;
+  height: 490px;
+  margin-left:26%;
+  border-radius: 16px;
+
+}
+
+.report-child-name-input{
+  width: 320px;
+  padding: 8px;
+  margin-top: 10px;
+  margin-left: 50px;
+  border-radius: 6px;
+  border: 1px solid rgb(30, 111, 183);
+
+}
+
+.report-child-age-input{
+  width: 320px;
+  padding: 8px;
+  margin-top: 10px;
+  margin-left: 50px;
+  border-radius: 6px;
+  border: 1px solid rgb(30, 111, 183);
+
+}
+
+.report-parent-name-input{
+  width: 320px;
+  padding: 8px;
+  margin-top: 10px;
+  margin-left: 50px;
+  border-radius: 6px;
+  border: 1px solid rgb(30, 111, 183);
+
+}
+
+.report-parent-contact-input{
+  width: 320px;
+  padding: 8px;
+  margin-top: 10px;
+  margin-left: 50px;
+  border-radius: 6px;
+  border: 1px solid rgb(30, 111, 183);
+
+}
+
+.report-last-seen-input{
+  width: 320px;
+  padding: 8px;
+  margin-top: 10px;
+  margin-left: 50px;
+  border-radius: 6px;
+  border: 1px solid rgb(30, 111, 183);
+
+}
+
+.report-child-button{
+  width: 320px;
+  padding: 8px;
+  margin-top: 10px;
+  margin-left: 58px;
+  border-radius: 6px;
+  border: 1px solid rgb(30, 111, 183);
+
+
+}
