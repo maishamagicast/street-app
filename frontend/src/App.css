@@ -295,3 +295,12 @@ font-family:'Times New Roman', Times, serif;
 
 
 }
+
+#faqs-button {
+  width: 320px;
+  padding: 38px;
+  border-radius: 6px;
+  display: flex;
+  border: 1px solid antiquewhite;
+
+}
