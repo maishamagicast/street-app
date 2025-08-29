@@ -1,8 +1,8 @@
 from datetime import datetime
 from flask_sqlalchemy import SQLAlchemy
 import bcrypt
+from extensions import db
 
-db = SQLAlchemy()
 
 class User(db.Model):
     __tablename__ = "users"
@@ -12,6 +12,8 @@ class User(db.Model):
     email = db.Column(db.String(120), unique=True, nullable=False)
     password_hash = db.Column(db.LargeBinary(60), nullable=False)  # bcrypt hash is bytes
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
+    
+    reports = db.relationship("Report", backref="user", lazy=True)
 
     def set_password(self, password: str):
         """Hash password with bcrypt and store it."""
