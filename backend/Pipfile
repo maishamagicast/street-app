@@ -12,6 +12,8 @@ flask-mail = "==0.9.1"
 python-dotenv = "*"
 flask-cors = "*"
 psycopg2-binary = "*"
+bcrypt = "*"
+pyjwt = "*"
 
 [dev-packages]
 

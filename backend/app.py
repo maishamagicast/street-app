@@ -10,6 +10,8 @@ from routes.report_routes import report_bp
 from urllib.parse import quote_plus
 from config import MAIL_SERVER, MAIL_PORT, MAIL_USE_TLS, MAIL_USERNAME, MAIL_PASSWORD, MAIL_DEFAULT_SENDER
 from extensions import db,mail,migrate
+from routes.auth_routes import auth_bp
+
 
 load_dotenv()
 
@@ -39,6 +41,7 @@ def create_app():
     # Register blueprints
     app.register_blueprint(ngo_bp, url_prefix="/ngos")
     app.register_blueprint(report_bp, url_prefix="/reports")
+    app.register_blueprint(auth_bp, url_prefix="/api")
 
     return app
 
