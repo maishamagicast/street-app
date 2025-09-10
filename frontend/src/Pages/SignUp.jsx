@@ -2,22 +2,40 @@ import React, { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 
 function SignUp() {
-  const [isLoaded, setIsLoaded] = useState(false)
+  const [firstName, setFirstName] = useState('')
+  const [lastName, setLastName] = useState('')
+  const [userName, setUserName] = useState('')
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+function handleFormSubmit(event) {
+  event.preventDefault()
+
+  const newUser = {
+    firstName,
+    lastName,
+    userName,
+    email,
+    password
+  }
+fetch("http://localhost:3000/users", {
+method: 'POST',
+headers: {
+  'Content-Type' : 'application/json'
+},
+body:JSON.stringify(newUser)
+})
+.then (response => response.json())
+.then(data => console.log(data))
+
+}
   const navigate = useNavigate()
-  useEffect(() => {
-    // setTimeout(() => {
-    //   setIsLoaded(true)
-    // }, 2000);
-  }, [])
-//   if (!isLoaded) {
-//     return (
-//      <div style={{backgroundColor:"blanchedalmond", width:1000, height:1000}}>
-//  <h2>Loading...</h2>
-//      </div>
-//     )
-//   }
+
   function handleCreateAccount() {
-    navigate("/")
+    if ( firstName!= '' || lastName!='' ||userName != '' || email != '' || password!= '') {
+     navigate("/") 
+    } else {
+      alert("Please fill in all credentials")
+    }
   }
   return (
     <div className='signup-container'>
@@ -27,15 +45,55 @@ function SignUp() {
     <div className='signup-form-container'>
       <h1 id='create-account-h1'>Create Account</h1>
       <p id='signup-page-ptag' > Already Have account? <Link to='/login'>login</Link></p>
-       <form action="">
-        <input type="text" name="" id="signup-firstname-input" placeholder='First Name'  />
-        <input type="text" name="" id="signup-lastname-input" placeholder='Last Name' />
-        <input type="text" name="" id="signup-username-input" placeholder='Enter username' />
-        <input type="email" name="" id="signup-email-input" placeholder='Enter email' />
-        <input type="password" name="" id="signup-password-input"  placeholder='Enter your password'/>
-        <input type="checkbox" name="" id="signup-checkbox-input" p />
+       <form action="" onSubmit={handleFormSubmit} >
+        <input 
+        type="text"
+         id="signup-firstname-input" 
+         placeholder='First Name'  
+         value={firstName}
+         onChange={(event) => setFirstName(event.target.value)}
+         />
+
+        <input
+         type="text" 
+        id="signup-lastname-input" 
+        placeholder='Last Name'
+        value={lastName}
+        onChange={(event) => setLastName(event.target.value)}
+        />
+
+        <input 
+        type="text" 
+        id="signup-username-input" 
+        placeholder='Enter username' 
+        value={userName}
+        onChange={(event) => setUserName(event.target.value)}
+        />
+
+        <input 
+        type="email" 
+        id="signup-email-input" 
+        placeholder='Enter email'
+        value={email}
+        onChange={(event) => setEmail(event.target.value)}
+         />
+
+        <input
+        type="password" 
+         id="signup-password-input"  
+         placeholder='Enter your password'
+         value={password}
+         onChange={(event) => setPassword(event.target.value)}
+         />
+
+        <input
+        type="checkbox" 
+        id="signup-checkbox-input" 
+         />
         <p className='signup-page-remember-me-ptag' >Remember me</p>
-        <button className='create-account-button' onClick={handleCreateAccount} >Create account</button>
+        <button className='create-account-button' type='submit' 
+        onClick={handleCreateAccount}
+         >Create account</button>
        </form>
     </div>
     </div>
