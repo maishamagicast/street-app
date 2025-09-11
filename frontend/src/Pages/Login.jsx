@@ -5,15 +5,7 @@ function Login() {
 
   const [userName, setUserName] = useState('')
   const [password, setPassword] = useState('')
-  const [canLogin, setCanLogin] = useState(false)
   const navigate = useNavigate()
-function handleLogin(){
-if (canLogin===true) {
-  navigate("/")
-} else {
-  alert("Invalid username or password")
-}
-}
 
   function handleFormSubmit(e) {
     e.preventDefault()
@@ -24,8 +16,13 @@ if (canLogin===true) {
 
         u => u.userName === userName && u.password === password
       );
+       if (!userName.trim() || !password.trim()) {
+      alert("Please enter both username and password")
+    }
       if (user) {
-        setCanLogin(true)
+        navigate("/")
+      }else {
+        alert("Invalid username or password")
       }
     })
 
@@ -50,7 +47,7 @@ if (canLogin===true) {
         onChange={(e) => setPassword(e.target.value)}
         />
         <p className='login-page-ptag'>first time here <Link to='/signup'>signup</Link></p>
-        <button className='login-button'onClick={handleLogin}>Login</button>
+        <button className='login-button'>Login</button>
       </form>
     </div>
   )
