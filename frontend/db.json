@@ -85,6 +85,17 @@
       "userName": "usertwo",
       "email": "testusertwo@gmail.com",
       "password": "iamusertwo"
+    },
+    {
+      "id": "6d95",
+      "firstName": "elvis",
+      "lastName": "mbuthia",
+      "userName": "markelvis",
+      "email": "markmbuthiaissus@gmail.com",
+      "password": "susnigga101"
     }
+  ],
+  "reportedChildren" : [
+    
   ]
 }

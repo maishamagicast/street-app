@@ -40,7 +40,7 @@ function Login() {
            onChange={(e) => setUserName(e.target.value)}
            />
         <input 
-        type="text" 
+        type="password" 
         placeholder='Enter password' 
         className='login-password-input'
         value={password}
